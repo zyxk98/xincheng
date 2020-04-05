@@ -1,10 +1,10 @@
 {
     "G_CONFIG": {
         "admin_username": "admin",
-        "admin_password": "admin",
+        "admin_password": "bqrtxj84",
         "render_name": "w.w",
-        "site_name": "OnePoint Demo",
-        "site_title": "OnePoint Demo",
+        "site_name": "OnePoint 网盘",
+        "site_title": "OnePoint 网盘",
         "site_icon": "https://cdn.onesrc.cn/uploads/images/onepoint.png",
         "site_keywords": "OnePoint",
         "site_description": "OnePoint description",
