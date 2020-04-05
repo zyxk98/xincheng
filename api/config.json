@@ -1,83 +1,93 @@
 {
-    "G_CONFIG": {
-        "admin_username": "admin",
-        "admin_password": "bqrtxj84",
-        "render_name": "w.w",
-        "site_name": "OnePoint 网盘",
-        "site_title": "OnePoint 网盘",
-        "site_icon": "https://cdn.onesrc.cn/uploads/images/onepoint.png",
-        "site_keywords": "OnePoint",
-        "site_description": "OnePoint description",
-        "site_script": "",
-        "site_readme": "## 200327\n\nonedrive_graph 新增无管理员 onedrive 支持\n\nonedrive_graph 新增网站 sharepoint 支持\n\nonedrive_graph 新增支持自定义 secret key\n\nonecache 修复缓存导致的404问题\n\nonecache 优化 list 类型缓存时间判断\n\nonecache 优化 mime 不规范导致的文件类型不能识别的问题",
-        "proxy": [
-            "https://proxy.onesrc.workers.dev/"
-        ],
-        "initTime": "2020-03-03T09:48:13.758Z",
-        "admin_password_date_hash": "c289ffe12a30c94530b7fc4e532e2f42",
-        "access_origins":["http://localhost:8080"]
+  "G_CONFIG": {
+    "admin_username": "admin",
+    "admin_password": "bqrtxj84",
+    "render_name": "w.w",
+    "site_name": "OnePoint 网盘",
+    "site_title": "OnePoint 网盘",
+    "site_icon": "https://ukuq.github.io/onepoint/favicon.png",
+    "site_keywords": "OnePoint",
+    "site_description": "OnePoint description",
+    "site_script": "",
+    "site_readme": "Nothing here!",
+    "proxy": [
+      "https://proxy.onesrc.workers.dev/"
+    ],
+    "access_origins": [
+      "http://localhost:8080"
+    ]
+  },
+  "DRIVE_MAP": {
+    "/demo_sharepoint/": {
+      "funcName": "onedrive_sharepoint",
+      "spConfig": {
+        "shareUrl": "https://lovelearn-my.sharepoint.com/:f:/g/personal/admin_share_onesrc_cc/Es6CMetI4fJCr4GqWZ3uvA0BEnzJxxb4CU-iQr04VYomLQ?e=C9K35U",
+        "root": ""
+      }
     },
-    "DRIVE_MAP": {
-        "/demo_sharepoint/": {
-            "funcName": "onedrive_sharepoint",
-            "spConfig": {
-                "shareUrl": "https://lovelearn-my.sharepoint.com/:f:/g/personal/admin_share_onesrc_cc/Es6CMetI4fJCr4GqWZ3uvA0BEnzJxxb4CU-iQr04VYomLQ?e=C9K35U",
-                "root": ""
-            }
-        },
-        "/demo_linux/": {
-            "funcName": "linux_scf",
-            "spConfig": {
-                "root": ""
-            }
-        },
-        "/demo_goindex/": {
-            "funcName": "gdrive_goindex",
-            "spConfig": {
-                "password": "index",
-                "cfurl": "https://goindex.onesrc.workers.dev"
-            }
-        },
-        "/demo_onedrive/demo_onedrive_com/": {
-            "funcName": "onedrive_graph",
-            "spConfig": {
-                "refresh_token": "OAQABAAAAAABeAFzDwllzTYGDLh_qYbH8T4VEMWcDAA66TH1bqjcGBV7gILezW8TUS_VOmxrmWwvOjLepq0RegTqQItPllIHLVmBqbYX4zEdcNWV4kU7-heUVoYDKHZP1Zrs209oeBce1sZGKJp-wbhsTFGdJ-Q1hee10lOt4o1cwdMK5V0561ZmTFvSHP60O1DRaGjm3AlxqaEoylFo-a9tdL090-kGAiCHttwh4D3d5qPsWYZFrY3bb3XQu88froQwvB6Q2EzKoXx8FZs9pAIf1k0QuWdCx9wwb2_Nwr4pL9wJVPN8Q9eSUcbYpJEZwLKJhOc29J2s2aZpeBZ5rJH4NYSM4q0HEW7lqvR3KjKamr93W5rSfpE9LaqifoHTrp0zrY7dJmQiQ0V3qJKZ9CWDNwHGqCfDtRXMWyuQQ4xs2jgMTj0L2FMxb9BeQGYAjjbSm53aiYxv7adQzr7PZezL2voIGljIO553GLd3jFTPwrubTEIPnkgTXuHxR_qH-uVFBIji0Oosb56j5aSgYIsc8TlsGLN0Czx6V6D84poizWENn9mWVzhy3eZR2sNc6m1Tdxl1ifafZukFoElFkeCK41vuhAJjHU1ichuCYsl3OuN78ItisNtZvmGi6RjXC3nd6d8QdMEcnilsRTIl-wb0xM5QAhzZWM2wuIpUvAICiZwNBOGjzAgk20EL-tJsQMd_BxvM8J_HTGBIU23sZYgoLKOVPI6QOMM74sLsBjAvsOvmVLU3OH3GFcMjj3DTFVjgP7AXOaTFjHVVlJE76ArYvHRuK1SeVRNQmzK3q-7sLIc8Kgc7zMCAA",
-                "oauth": 0
-            }
-        },
-        "/demo_onedrive/demo_onedrive_cn/": {
-            "funcName": "onedrive_graph",
-            "spConfig": {
-                "refresh_token": "OAQABAAAAAAD32Me_adtYS4A5iUsE7inoN5eLCtuGw7w_Tet8aXmvp6ic05XEkEHQwQF2MgJkaTp-mEZKlXH0QvI3NCbZh9NI5wvP_r0nqb6UaBeLxeOCgrlbhH1FzeX0ep0ZZQ8D0J6ky1yEazxxkg8c4FsMvUWVxkw5kiHYVc3DK_Y3WmtvRHFxazeWgxBaiYm9jfbcR8maVNeey6oGZCw6zUvwrINoLOCok05imP_GEf_eHCsDcISTU0MI_XpEy9Ak0i8jo6ii74EUVEtJAloaaf56OtIQliyWkH56VtVsRnDpW1DftsJY1qRsCbSq7PmpLWscvLW8qdmvFy13_nEhp8PAei41fz9XnDT4AS7gWHUpFGmw837MVSDz0jk2LJrFBh7_CywK9uaj3mdY49paJEP7YuIVf8RkQMMFFudFazeKwx19TPZepZmR580rpr6qhs2aL4WG6YhacWnRfKZGGs_sL9aJviBkzvO_vDWjxO7cMvKd_SXDt9s8_IeloARxvbKZQ-z2ojbYm_bbY7917fxDlISRrDp_SVHJtq9s-YS3ZS6lFA_aBChaIXTxskJXZB-jHueQ7arEi7N4zCB4hUb58J5DIL_BEdcps_icYAySjbRFU170kTIw7aB67wjIiTLoXMoMopMU9FmfctnqB34ubTNK6FHWMICRRWZLiThyEFSYwM9ER0HyJFQjncMxBs2cuhJx5zZeXeQhEsrVuJtULxdWeZr-4Grhz3XlyhH72jyjFeXAvey1Ew_H7myl0aBKFosqSNMSXLBY-x32v6uUaCKPziaQHKfWQ8cAoNrhM2yb_CAA",
-                "oauth": 1
-            }
-        },
-        "/demo_password_123_密码测试/": {
-            "funcName": "onedrive_sharepoint",
-            "spConfig": {
-                "shareUrl": "https://lovelearn-my.sharepoint.com/:f:/g/personal/admin_share_onesrc_cc/Es6CMetI4fJCr4GqWZ3uvA0BEnzJxxb4CU-iQr04VYomLQ?e=C9K35U",
-                "root": "/image"
-            },
-            "password": "123",
-            "password_date_hash": "ae6e334f62fb5d989398deed87568c94"
-        },
-        "/demo_phony/": {
-            "funcName": "system_phony",
-            "spConfig": {
-                "list": [
-                    "https://ukuq.github.io/onepoint/log.md",
-                    "https://ukuq.github.io/hello-word/README.md",
-                    "https://ukuq.github.io/onepoint/favicon.png",
-                    "http://www.w3school.com.cn/i/horse.ogg",
-                    "http://www.w3school.com.cn/i/movie.mp4"
-                ]
-            }
-        }
+    "/demo_linux/": {
+      "funcName": "linux_scf",
+      "spConfig": {
+        "root": ""
+      }
     },
-    "DOMAIN_MAP":{
-        "::ffff:127.0.0.1":{
-            "ph":"",
-            "p0":""
+    "/demo_goindex/": {
+      "funcName": "gdrive_goindex",
+      "spConfig": {
+        "password": "index",
+        "cfurl": "https://goindex.onesrc.workers.dev"
+      }
+    },
+    "/demo_onedrive/": {
+      "funcName": "onedrive_graph",
+      "spConfig": {
+        "refresh_token": "OAQABAAAAAACQN9QBRU3jT6bcBQLZNUj7qYv3YSeiMsEu9BaICGzevCs5Fh8UDBFaDp0DdAA_vse2HYPIjcTS27BJb_Vh_FBj6gXv7Xf37SpLyiw6I8GMofyMUM7PpjbJdIuaA7QRunZKijQxEGSDnLPj-GoVrlnMlsyxRgYptnNuciTxRLiwzO67B-_TxAdU5RTyhLSVhSOORYmTDfrZolR5KtIVvqMztUAs1-kMUZAXOEiqBBHO_arzD3Z35yAocoXsiBi1-NdNGz9agVYLzOhnV3xzwIp_3FLkQbXom4tJpLQCtsR-g_1izairu2JALzYq0rDDhL1w225YJi0yS93Fq96tfwJDtgshe8et0q9YMIRxwaW5eK1mDJBQkmJGgm39AGjRmNW2SNiZPdgqIapi6cJzVqnB-a-ctp6mW4p4o_p8kgMhFJGSdAOR_RT6J0zsBt1dbVyvO_xaeh0jkPi6v0N_Frku3uYWPvpSEjQ3e-F8GWmN3Wr9QGNHLwAVVNRL3urvLKXmRZ-yVZfE1xlqys4loqBrg50kcUOWeWhG-60PaO1hTQgxL28mnNc02QZHGBP3Y_72HsTJZWRneVFh-L6N7kwaktoIV6yxC7ocnW6rHpWPW5efujc9U-ZYaTwUaevYC7SOVdA-LnnTw-ydGtNLghM5jTaQR8k6-mgo0v7gi32yzoNDHhFQeKJptBlyb9vdzviFfJMtkZj3-uQy1kHtDAs6cfwOPUlENnRhIpWvxqFxYfkBKvhtWBOm4C_MJdDuHc9SojLkOByI5lwrFU7FAmI-IAA",
+        "oauth": 0
+      }
+    },
+    "/demo_password_123/": {
+      "funcName": "onedrive_sharepoint",
+      "spConfig": {
+        "shareUrl": "https://lovelearn-my.sharepoint.com/:f:/g/personal/admin_share_onesrc_cc/Es6CMetI4fJCr4GqWZ3uvA0BEnzJxxb4CU-iQr04VYomLQ?e=C9K35U",
+        "root": "/image"
+      },
+      "password": "123"
+    },
+    "/": {
+      "funcName": "system_phony",
+      "spConfig": {
+        "admin": "请不要删除此项"
+      }
+    },
+    "/demo_phony/": {
+      "funcName": "system_phony",
+      "spConfig": {
+        "list": {
+          "/": [
+            "https://ukuq.github.io/onepoint/log.md",
+            "https://ukuq.github.io/hello-word/README.md",
+            "https://ukuq.github.io/onepoint/favicon.png",
+            "http://www.w3school.com.cn/i/horse.ogg",
+            "http://www.w3school.com.cn/i/movie.mp4",
+            "http://www.w3school.com.cn/i/movie.ogg"
+          ]
         }
+      }
+    },
+    "onedrive": {
+      "funcName": "onedrive_graph",
+      "spConfig": {
+        "root": "onedrive",
+        "refresh_token": "{ \"token_type\": \"Bearer\", \"scope\": \"https://graph.microsoft.com/Files.ReadWrite.All\", \"expires_in\": 3600, \"ext_expires_in\": 3600, \"access_token\": \"EwBgA8l6BAAUO9chh8cJscQLmU+LSWpbnr0vmwwAAdjWHeqLWF/2rxiUhaEg/Rdd10n0Y2XpdooyckH8ehogaFfX2TsRAOS6i8O5peN67GQbBHB05Ypw/HYNwYY+MoT2zrASmRKwcQU0GQctmR/dkLFOMUxsOK8GEBNo++2eIYpD5r1JrxgvSgMH6gwLS1f4+QzMyHkG8jAyT9OWuCmUcGVJS2QFSetaQPIa5E4zBosH1rD0II7JNXfbleu6mxVH2tr8FvQtnDNu3ZXVJNB9hEEnDD7EP/k7tqccrnDB21wdTmXyHKnQ+hTBOR53GG4leLcDDdJWfL0VuN0HPPn1SMZwdouNKZgf9bseqyYhgRsEwCzbL29HHuSqh2x0a1wDZgAACLJ9EBc6dNkyMAKANw3+rszF4fpy0BnS+DAhwAW+r2NNRe0OQWiRvxw2C/tIR/nHG2k4zJtWbDWM9r+6saQGzz3ZQJFRqEil5LwEwCaDFqKGpK+64qsQ5Kj0Sfv74E3tW7WGpGIPNEG5yMoDnPf3dmKBqTWocCAsCMpR2DOBi2MdTr/MecDTxlPBdIEGrXEHTJ5vt2hmr87bIp5YHWnFuC5rHiKH08wmh4dR4PWEc64yby04gFUfy1RD9NW1RXUWhf1XLeH5yaaN3MdgFXwrDRR/P+aCRyFFmkDqAEv5Ey4odLqiPsANd/22wSwjJcNAlpwTbrPL5qZb8gc1n5u3ZN/3kC/vhPnQ8Ke8wIMTMuowZrADGPuXDrrHu6aMwC3TyTMzZ5sr2Sx9DKfPjEikdOHGc8llKfSFt2+9SekC8MUZQjgB6cxoiSV/K+Z3sXryYkflGk0digaB4vJQ8RK3P96G7ZpIm0SMeGUjR54y6q9LVffIsfJRP+eTIUc7rYHoqOPxxsws8Kuae4y5eVhQ4no3wXQoLvLSd+hGayo12A22zEtVgGqhQ4XtPOtDRnwhmbPKVzdi1s2zdT193TmSuqoQURGv0BH+G+/oLTzA547ISHUlvEXuaBKcQbAo3seqJcouKRe87j2uhsjZEx1njBnbKKIMpIHzZiira+rq+lE4MspVrwXnD+LcrrvXcq3G75JUM+FHjsr1sQGjxmYP1KiASfra9UzDXETdWkHVvu6PNAcSrNAHCnWIa2wC\", \"refresh_token\": \"MCdbQp*UY6ged2jJhy7qUinMMZDIOEpuNzQrnklP*R*MVYEkwA3Wo3EOoBAAfU32Jer6*O2P6NjbdJfP2ojtoT4JN8Hqr6cNM5i59Smk6NrHGW8!8N!Q!*fOlw7IFZgzANEhWmlh4hi2CJsArHpFLLwlhCjUyipGqYOyq7c5wZmSTuC5YB73RVwhJ!34p1LBa91cHmveY!fJLv0fEPIVzij0Q16j36WNgLndNnaOuFL0hTvZkVIUpOnlnFM2g*s7L0Wx3wmID0iXLdDRfNt1R6fbt7cfKzCVYPHNAsD6LV1GhUZJYSBTsBqRJF*3!dyQ25HdF2okqrWBGa85bviJ1cFLEx27NWAunOxoc93!W9Vm18BR0A4JbA31HuC6RcfuLpF8Rwp1jmhEWDDzLq2OslIpDc*S7b3R1F5gxLXJvHqdOZzIaV40SI!dYadXP1rXzgjn64ZZmzJ8CYlj3d7ZmXbM$\" }",
+        "oauth": 0
+      },
+      "password": "bqrtxj84"
     }
+  },
+  "DOMAIN_MAP": {
+    "110.11.110.11": {
+      "domain": "www.example.com",
+      "path": "/point"
+    }
+  }
 }
